@@ -4,15 +4,6 @@ hosting link: https://jccoder17.github.io/Tea-Shop-Website/
 
 ## User Stories
 
-Users:
-
-Refined Rachel
-Nerdy Nate
-Connoisseur Cole
-
-AS A
-I WANT TO
-SO THAT I CAN
 
 1. Refined Rachel
 
