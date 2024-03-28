@@ -1,7 +1,7 @@
 #Esteamed Teas Online Tea Shop
 
 hosting link: https://jccoder17.github.io/Tea-Shop-Website/
-
+,,, ,,,
 ## User Stories
 
 
@@ -16,3 +16,4 @@ hosting link: https://jccoder17.github.io/Tea-Shop-Website/
 3.   Connoisseur Cole
 
 	As a highly educated tea connoisseur with a sensitive palette I want to experience the best teas of the world to add to my collection of life memories and moments. 
+,,, ,,,
