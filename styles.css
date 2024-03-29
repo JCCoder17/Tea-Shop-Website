@@ -1,4 +1,18 @@
+
+
 body {
     color: rgb(102, 84, 47);
     background-color: rgb(153, 173, 105);
+}
+html {
+    font-size: 20px;
+}
+
+
+body {
+    min-width: 400px;
+}
+.teaPhoto {
+    display: flex;
+    justify-content: center;
 }
