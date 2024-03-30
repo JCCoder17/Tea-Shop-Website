@@ -3,11 +3,15 @@
 body {
     color: rgb(102, 84, 47);
     background-color: rgb(153, 173, 105);
+    justify-content: center;
 }
 html {
     font-size: 20px;
 }
 
+div {
+    justify-content: center;
+}
 
 body {
     min-width: 400px;
@@ -15,4 +19,32 @@ body {
 .teaPhoto {
     display: flex;
     justify-content: center;
+}
+
+.homePhoto {
+    justify-self: flex-end;
+    justify-content: space-between;
+}
+
+.About {
+    justify-self: center;
+    text-align: center;
+    border: 2;
+    border-color: black;
+}
+
+.shop {
+    text-align: center
+}
+
+.quality {
+    text-align: center;
+}
+
+.buy {
+    text-align: center;
+}
+
+.teaTitle {
+    text-align: center;
 }
