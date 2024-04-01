@@ -4,13 +4,30 @@ body {
     color: rgb(102, 84, 47);
     background-color: rgb(153, 173, 105);
     justify-content: center;
-}
-html {
-    font-size: 20px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rgba(237, 230, 219, 0.886));
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
 }
 
-div {
+header{
     justify-content: center;
+    border: 5px solid #a88f32;
+}
+
+section {
+    justify-content: center;
+    border: 5px solid #a88f32;
+}
+
+p {
+    border: 3px solid #a88f32;
 }
 
 body {
@@ -19,6 +36,8 @@ body {
 .teaPhoto {
     display: flex;
     justify-content: center;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .homePhoto {
@@ -42,7 +61,14 @@ body {
 }
 
 .buy {
+    padding: 30px 10px; border: 5px solid rgba(83, 112, 46, 0.539); 
     text-align: center;
+    width: 33%;
+    justify-content: center; 
+}
+
+.buy:hover {    
+    color: rgb(30, 233, 212) 69, 17);
 }
 
 .teaTitle {
