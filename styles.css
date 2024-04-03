@@ -37,7 +37,7 @@ body {
     display: flex;
     justify-content: center;
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 5px 5px #000000;
 }
 
 .homePhoto {
@@ -61,16 +61,42 @@ body {
 }
 
 .buy {
-    padding: 30px 10px; border: 5px solid rgba(83, 112, 46, 0.539); 
+    justify-content: center; 
+    padding: 30px 10px; 
+    border: 5px solid rgba(83, 112, 46, 0.539); 
     text-align: center;
     width: 33%;
-    justify-content: center; 
+   
 }
 
 .buy:hover {    
-    color: rgb(30, 233, 212) 69, 17);
+    color: rgb(114, 184, 177) 69, 17);
 }
 
 .teaTitle {
     text-align: center;
 }
+
+#footerMenu {
+    text-align: center;
+}
+.footerList{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerItem {
+    display: inline-block;
+    margin-right: 10px; /
+    justify-content: center;* add spacing between items */
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #a88f32;
+}
+  }
+ 
