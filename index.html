@@ -8,77 +8,95 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">Esteamed Teas</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-olive">
+        <div class="container">
+            <a class="navbar-brand" href="#">Esteamed Teas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="headerMenu">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./shop.html">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-    </header>
-    <main>
-        <section>
-            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/tea-transparent-mug.jpeg" class="d-block w-100" alt="transparent tea cup with tea inside">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/tea-set-on-board.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/tea-cups-lined-up.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </section>
-        <section>
-            <div class="About">
-                <h1>About</h1>
-                <h3>At Esteamed Teas, we know the feeling and taste of a good sip of tea.  We started our online tea shop after traveling around the world and tasting teas from all over the world.  We wanted to share our knowledge and love for tea with the world so we decided to start a shop! </h3>
-            </div>
-        </section>
-        <section>
-            <div class="homePhoto"><img src="./images/tea-in-spoons.jpg" alt="loose tea in spoons" width="49%">
-              <img src="./images/tea-in-jars.jpg" alt="loose tea in glass jars" width="49%">
         </div>
-        </section>
-        <section>
-            <div class="quality">
-                <h2>Commitment to Quality</h2>
-                <h3>We know you love your tea and we love you!  As a customer of Esteamed Teas you can rest assured that all of our teas are ethically sourced and of the highest quality.  We scour remote regions for la creme de la creme of teas.  You will surely not be disappointed with our products. </h3>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-      <ul class="footerList">
-        <li class="footerItem"> <a href="./index.html">Home</a></li>
-        <li class="footerItem"> <a href="./shop.html">Shop</a></li>
-        <li class="footerItem"> <a class="nav-link" href="./contact.html">Contact</a></li>
-      </ul>
-    </footer>
+    </nav>
+</header>
+<section>
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/tea-transparent-mug.jpeg" class="d-block w-100" alt="transparent tea cup with tea inside">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/tea-set-on-board.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/tea-cups-lined-up.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</section>
+<main>
+  <section id="about">
+      <div class="About">
+          <h1>About</h1>
+          <h3>At Esteamed Teas, we know the feeling and taste of a good sip of tea. We started our online tea shop after traveling around the world and tasting teas from all over. We wanted to share our knowledge and love for tea with the world so we decided to start a shop!</h3>
+      </div>
+  </section>
+
+  <section id="photos">
+      <div class="homePhoto">
+          <img src="./images/tea-in-spoons.jpg" alt="loose tea in spoons">
+          <img src="./images/tea-in-jars.jpg" alt="loose tea in glass jars">
+      </div>
+  </section>
+
+  <section id="quality">
+      <div class="quality">
+          <h2>Commitment to Quality</h2>
+          <h3>We know you love your tea and we love you! As a customer of Esteamed Teas, you can rest assured that all of our teas are ethically sourced and of the highest quality. We scour remote regions for the creme de la creme of teas. You will surely not be disappointed with our products.</h3>
+      </div>
+  </section>
+</main>
+<footer class="footer">
+  <nav class="navbar navbar-expand-lg navbar-light bg-olive">
+      <div class="container">
+          <a class="navbar-brand" href="#">Esteamed Teas</a>
+          <div class="collapse navbar-collapse" id="navbarNavFooter">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,102 +1,241 @@
-
-
+/* Global styles */
 body {
-    color: rgb(102, 84, 47);
-    background-color: rgb(153, 173, 105);
-    justify-content: center;
-    font-family: Georgia, serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: rgba(237, 230, 219, 0.886));
-font-weight: normal;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
+    background-color: rgb(135, 135, 29);
+    color: tan;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
 }
 
-header{
-    justify-content: center;
-    border: 5px solid #a88f32;
+header {
+    background-color: rgba(51, 51, 51, 0.6); /* Transparent black (40% opacity) */
+    color: tan;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
 }
 
-section {
-    justify-content: center;
-    border: 5px solid #a88f32;
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-p {
-    border: 3px solid #a88f32;
+/* Styles for carousel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
 }
 
-body {
-    min-width: 400px;
+/* Floating contact form */
+.contact-form {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: tan;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.teaPhoto {
+
+/* Custom styles for the navbar */
+.navbar.navbar-light.bg-olive {
+    background-color: rgba(51, 51, 51, 0.6) !important; /* Transparent black (40% opacity) */
+}
+
+.navbar.navbar-light.bg-olive .navbar-brand,
+.navbar.navbar-light.bg-olive .navbar-nav .nav-link {
+    color: tan !important;
+}
+
+.navbar.navbar-light.bg-olive .navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+.navbar.navbar-light.bg-olive .navbar-toggler-icon {
+    background-color: tan !important;
+}
+
+.navbar.navbar-light.bg-olive .navbar-toggler {
+    border-color: tan !important;
+}
+
+.navbar.navbar-light.bg-olive .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Styles for the home page */
+#about h1,
+#quality h2 {
+    text-align: center;
+    font-weight: bold; /* Make titles bold */
+    color: rgb(228, 218, 206); /* Lighter color for titles */
+}
+
+#about h3,
+#quality h3 {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Center horizontally */
+}
+
+#photos {
     display: flex;
-    justify-content: center;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 5px 5px #000000;
-}
-
-.homePhoto {
-    justify-self: flex-end;
     justify-content: space-between;
+    gap: 20px;
 }
 
-.About {
-    justify-self: center;
-    text-align: center;
-    border: 2;
-    border-color: black;
+#photos img {
+    flex: 1; /* Each image takes up equal space */
+    max-width: calc(50% - 10px); /* Half of the screen width minus border radius and shadow */
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Adjusted shadow box */
 }
 
-.shop {
-    text-align: center
+#about,
+#quality {
+    background-color: rgba(51, 51, 51, 0.4); /* Similar to navbar color theme */
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Shadow box */
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.quality {
-    text-align: center;
-}
-
-.buy {
-    justify-content: center; 
-    padding: 30px 10px; 
-    border: 5px solid rgba(83, 112, 46, 0.539); 
-    text-align: center;
-    width: 33%;
-   
-}
-
-.buy:hover {    
-    color: rgb(114, 184, 177) 69, 17);
-}
-
-.teaTitle {
+#about h1,
+#quality h2 {
     text-align: center;
 }
 
-#footerMenu {
+#about h3,
+#quality h3 {
     text-align: center;
-}
-.footerList{
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Center horizontally */
+    
 }
 
-.footerItem {
-    display: inline-block;
-    margin-right: 10px; /
-    justify-content: center;* add spacing between items */
+/* Styles for the shop page */
+main {
+    display: flex;
+    flex-direction: column; /* Arrange sections vertically */
+    align-items: center; /* Center content horizontally */
   }
-
-  footer {
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #a88f32;
-}
+  
+  .navbar {
+    background-color: rgba(51, 51, 51, 0.6); /* Transparent color for navbar */
   }
- 
+  
+  .navbar-brand {
+    color: #d2d2d2; /* Lighter color for navbar brand */
+  }
+  
+  .shop {
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #d2d2d2;
+    margin-bottom: 20px; /* Add margin between the "Shop" heading and tea sections */
+    text-align: center; /* Center the text */
+    width: 100vw; /* Full width of the viewport */
+  }
+  
+  .tea-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to new line */
+    align-items: center; /* Center content horizontally */
+    margin-bottom: 20px; /* Add margin between tea sections */
+    width: 100%; /* Run entire width of the screen */
+  }
+  
+  .tea-section .teaPhoto {
+    width: calc(33.33% - 20px); /* Adjust width of photo container */
+    max-width: 100%; /* Ensure container doesn't exceed page width */
+    margin-right: 20px; /* Add margin between photo containers */
+  }
+  
+  .tea-section .teaPhoto img {
+    width: 100%; /* Ensure image fills container */
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tea-details {
+    flex: 1; /* Take remaining space */
+    width: 100%; /* Run entire width of the screen */
+  }
+  
+  .text-box,
+  .price-box {
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #d2d2d2;
+    margin-bottom: 20px; /* Add margin between text boxes */
+    text-align: center; /* Center the text */
+    width: calc(100% - 40px); /* Adjust width of text boxes */
+    max-width: 100%; /* Ensure text boxes don't exceed page width */
+  }
+  
+  .price-box {
+    padding: 10px; /* Adjust padding for price box */
+  }
+  
+  /* Styles for the contact page */
+.contact-main {
+    display: flex;
+    flex-direction: row; /* Arrange sections vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding to main container */
+  }
+  
+  .container {
+    background-color: rgba(51, 51, 51, 0.6); /* Transparent color for form background */
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #d2d2d2;
+    width: 90vw; /* Adjust width of form */
+    max-width: 100%; /* Set maximum width for form */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Add margin between form fields */
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  .submit-btn {
+    background-color: #0c2c4c; /* Dark color for submit button */
+    color: #ffffff; /* Light color for text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    padding: 10px 20px; /* Add padding to button */
+    cursor: pointer; /* Add cursor pointer */
+  }
+  
+  .submit-btn:hover {
+    background-color: #23272b; /* Darker color on hover */
+  }
+  
+  /* Styles for the footer */
+.footer {
+    background-color: #333; /* Background color for footer */
+    color: #d2d2d2; /* Text color for footer */
+    padding: 20px 0; /* Add padding to top and bottom */
+  }
+  
+  .footer .navbar-brand {
+    color: #d2d2d2; /* Text color for footer brand */
+  }
+  
+  .footer .navbar-nav .nav-link {
+    color: #d2d2d2; /* Text color for footer links */
+  }
+  
+  .footer .navbar-nav .nav-link:hover {
+    color: #ffffff; /* Text color for footer links on hover */
+  }
+  
