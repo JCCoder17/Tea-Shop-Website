@@ -155,7 +155,10 @@ main {
     flex: 1; /* Take remaining space */
     width: 100%; /* Run entire width of the screen */
   }
-  
+  ul {
+    text-align: left;
+  } 
+
   .text-box,
   .price-box {
     background-color: rgba(51, 51, 51, 0.6);
